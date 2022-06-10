@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 261.89948, g: 324.4541, b: 429.4325, a: 1}
+  m_IndirectSpecularColor: {r: 262.3369, g: 325.0498, b: 430.21924, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -693,6 +693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile_prefabs:
   - {fileID: 6359987273137251211, guid: 6c9f5d5e79adbfc4495732f1d880cf23, type: 3}
+  - {fileID: 6359987273137251211, guid: d4279e7a343d5e64db86fb8c8fc7546c, type: 3}
+  - {fileID: 6359987273137251211, guid: 5971fffd975f7c145a6614476ea3e549, type: 3}
   player_transform: {fileID: 2048109790}
   number_of_tile_x: 5
   number_of_tile_z: 5
