@@ -15,6 +15,7 @@ public class Tile{
 public class Tile_generator : MonoBehaviour
 {
     public GameObject[] tile_prefabs;
+    public bool rotateRandomly;
     private float tile_size = 10.0f;
     public Transform player_transform;
     private float player_last_transform_x;
@@ -79,7 +80,10 @@ public class Tile_generator : MonoBehaviour
                     if(!tiles.ContainsKey(tile_name)){      
                         GameObject t = (GameObject) Instantiate(tile_prefabs[picked_tile]);
                         t.transform.position = pos;
-                        t.transform.Rotate(0.0f, (Random.Range(0, 5) * 90.0f), 0.0f,Space.Self);
+                    if (rotateRandomly)
+                    {
+                         t.transform.Rotate(0.0f, (Random.Range(0, 5) * 90.0f), 0.0f,Space.Self);
+                    }
                         tiles.Add(tile_name,t);
                         
                         t.name = tile_name;
